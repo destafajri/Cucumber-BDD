@@ -8,9 +8,6 @@
 	<name>CucumbeBDD</name>
 
 	<properties>
-		<project.build.sourceEncoding>
-			UTF-8
-		</project.build.sourceEncoding>
 		<maven.compiler.source>
 			1.8
 		</maven.compiler.source>
@@ -23,7 +20,7 @@
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>mavem-surefire-plugin</artifactId>
+					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.18.1</version>
 					<configuration>
 						<suiteXmlFiles>
@@ -34,7 +31,6 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
@@ -42,7 +38,6 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>5.6.0</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -57,5 +52,6 @@
 		    <version>3.141.59</version>
 		</dependency>
 		
+
 	</dependencies>
 </project>
