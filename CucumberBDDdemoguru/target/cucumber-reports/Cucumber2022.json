@@ -1,0 +1,155 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-18T16:22:19.136Z",
+        "line": 3,
+        "name": "Register dengan email valid",
+        "description": "",
+        "id": "register-aplikasi-gtpl-bank;register-dengan-email-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11647000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User sedang berada di halaman register",
+            "match": {
+              "location": "definition.RegistTestDefinition.user_sedang_berada_di_halaman_register()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 146000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User memasukan email \"yanwarsolah@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"yanwarsolah@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "definition.RegistTestDefinition.user_memasukan_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2980000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User menekan tombol submit",
+            "match": {
+              "location": "definition.RegistTestDefinition.user_menekan_tombol_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User akan melihat kredensial yang diberikan \"Access details to demo site.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Access details to demo site.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "definition.RegistTestDefinition.user_akan_melihat_kredensial_yang_diberikan(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-18T16:22:34.221Z",
+        "line": 10,
+        "name": "Register dengan email invalid",
+        "description": "",
+        "id": "register-aplikasi-gtpl-bank;register-dengan-email-invalid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11614000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User sedang berada di halaman register",
+            "match": {
+              "location": "definition.RegistTestDefinition.user_sedang_berada_di_halaman_register()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User memasukan email \"yanwarsolah.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"yanwarsolah.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "definition.RegistTestDefinition.user_memasukan_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User menekan tombol submit",
+            "match": {
+              "location": "definition.RegistTestDefinition.user_menekan_tombol_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 257000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User akan melihat pesan validasi \"Email ID is not valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Email ID is not valid\"",
+                  "offset": 33
+                }
+              ],
+              "location": "definition.RegistTestDefinition.user_akan_melihat_pesan_validasi(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register Aplikasi GTPL Bank",
+    "description": "",
+    "id": "register-aplikasi-gtpl-bank",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/regis.feature",
+    "tags": []
+  }
+]
