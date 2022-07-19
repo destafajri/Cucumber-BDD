@@ -1,4 +1,4 @@
-Feature: Payment Test(DESTA)
+Feature: Payment Test
 
 Scenario: Valid Test
 	Given User berada di page Checkout
