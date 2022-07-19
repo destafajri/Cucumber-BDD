@@ -1,0 +1,323 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-19T17:38:21.372Z",
+        "line": 3,
+        "name": "Valid Test",
+        "description": "",
+        "id": "payment-test(desta);valid-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6288000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User berada di page Checkout",
+            "match": {
+              "location": "definition.defition.user_berada_di_page_Checkout()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 638000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Melakukan checkout",
+            "match": {
+              "location": "definition.defition.melakukan_checkout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 519000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User berada di page payment \"Payment Process\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Payment Process\"",
+                  "offset": 28
+                }
+              ],
+              "location": "definition.defition.user_berada_di_page_payment(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User mengisi kartu kredit 1234657891234567",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234657891234567",
+                  "offset": 26
+                }
+              ],
+              "location": "definition.defition.user_mengisi_kartu_kredit(long)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 325000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User mengisi expired month 12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 27
+                }
+              ],
+              "location": "definition.defition.user_mengisi_expired_month(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User mengisi expired year cc 2028",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2028",
+                  "offset": 29
+                }
+              ],
+              "location": "definition.defition.user_mengisi_expired_year_cc(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User mengisi CVVcode 123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 21
+                }
+              ],
+              "location": "definition.defition.user_mengisi_CVVcode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1306000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User melaukukan payment",
+            "match": {
+              "location": "definition.defition.user_melaukukan_payment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 309000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User mendapatkan validasi \"Payment successfull!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Payment successfull!\"",
+                  "offset": 26
+                }
+              ],
+              "location": "definition.defition.user_mendapatkan_validasi(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-19T17:38:31.145Z",
+        "line": 14,
+        "name": "inValid Test",
+        "description": "",
+        "id": "payment-test(desta);invalid-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5416000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User berada di page Checkout",
+            "match": {
+              "location": "definition.defition.user_berada_di_page_Checkout()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 625000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Melakukan checkout",
+            "match": {
+              "location": "definition.defition.melakukan_checkout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 668000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User berada di page payment \"Payment Process\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Payment Process\"",
+                  "offset": 28
+                }
+              ],
+              "location": "definition.defition.user_berada_di_page_payment(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 282000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User mengisi kartu kredit 123456789",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456789",
+                  "offset": 26
+                }
+              ],
+              "location": "definition.defition.user_mengisi_kartu_kredit(long)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 157000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User mengisi expired month 12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 27
+                }
+              ],
+              "location": "definition.defition.user_mengisi_expired_month(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User mengisi expired year cc 2022",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2022",
+                  "offset": 29
+                }
+              ],
+              "location": "definition.defition.user_mengisi_expired_year_cc(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User mengisi CVVcode 123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 21
+                }
+              ],
+              "location": "definition.defition.user_mengisi_CVVcode(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User melaukukan payment",
+            "match": {
+              "location": "definition.defition.user_melaukukan_payment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 246000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User mendapatkan notifikasi alert \"Check card number is 16 digits!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Check card number is 16 digits!\"",
+                  "offset": 34
+                }
+              ],
+              "location": "definition.defition.user_mendapatkan_notifikasi_alert(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Payment Test(DESTA)",
+    "description": "",
+    "id": "payment-test(desta)",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFile/payment.feature",
+    "tags": []
+  }
+]
